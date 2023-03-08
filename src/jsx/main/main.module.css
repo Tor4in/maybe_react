@@ -1,0 +1,54 @@
+.main_wraper {
+  text-align: center;
+}
+.main_wraper .sachen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 100px 0 50px 0;
+}
+.main_wraper .sachen div {
+  padding: 50px;
+}
+.main_wraper .sachen div a div {
+  background-color: #bbb;
+  width: 170px;
+  height: 250px;
+}
+.main_wraper .add {
+  width: 3%;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  padding: 5px;
+  margin: 10px auto;
+}
+.main_wraper .info_bank {
+  width: 100%;
+  background-color: #bbb;
+  padding: 8px 20px;
+  margin: 30px 0 150px 0;
+}
+.main_wraper .info_bank p {
+  padding: inherit;
+  margin: 20px;
+}
+.main_wraper .info_bank p a {
+  margin: 20px;
+  padding: inherit;
+  border: solid wheat 1px;
+}
+.main_name {
+  padding: 250px 0 120px 0;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+.main_name_sub {
+  font-weight: 500;
+  font-size: 1.2em;
+}

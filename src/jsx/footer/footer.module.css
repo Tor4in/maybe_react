@@ -1,0 +1,11 @@
+p {
+  text-align: center;
+}
+p.par {
+  margin: 20px 0 60px 0;
+}
+p.f_sub {
+  max-width: 600px;
+  margin: 10px auto;
+  font-size: 0.9em;
+}

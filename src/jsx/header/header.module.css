@@ -1,0 +1,105 @@
+body {
+  margin-top: 66px;
+}
+body header {
+  position: relative;
+  width: 100%;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 255;
+}
+body header span {
+  background: rgb(142, 156, 230);
+  background: linear-gradient(156deg, rgba(142, 156, 230, 0.3939776594) 10%, rgba(78, 205, 233, 0.2259104325) 100%);
+}
+body header .div_logo img {
+  width: 40px;
+  margin: 0 15px 0 25px;
+}
+body header .div_logo p {
+  display: inline-block;
+  font-size: 2em;
+  padding: 6px;
+}
+body header .div_nav__list ul li {
+  display: inline-block;
+  position: relative;
+}
+body header .div_nav__list ul li a {
+  color: black;
+  padding: 10px;
+  margin: 0 8px;
+  display: inline-block;
+  -webkit-transition: color 0.7s ease, background-color 0.7s ease;
+  transition: color 0.7s ease, background-color 0.7s ease;
+}
+body header .div_nav__list ul li a:hover {
+  color: #d4a850;
+  background-color: #47381c;
+}
+body header .div_nav__list ul li div.bar {
+  padding: 30px;
+  width: 160px;
+  position: absolute;
+  display: none;
+  left: 10px;
+}
+body header .div_nav__list ul li div.bar > ul {
+  display: none;
+  bottom: -160px;
+  left: 6px;
+  width: 160px;
+  position: absolute;
+  background-color: #d1aa66;
+  color: #71429c;
+  padding: 20px;
+  -webkit-animation: anim1 1s ease;
+          animation: anim1 1s ease;
+}
+body header .div_nav__list ul li div.bar > ul li {
+  padding: 4px;
+}
+body header .div_nav__list ul li:hover div.bar > ul {
+  display: block;
+}
+body header .div_nav__list ul li:hover div.bar {
+  display: block;
+}
+body header .div_nav__list ul li:nth-child(2) {
+  position: relative;
+  -webkit-transition: all 0.9s ease;
+  transition: all 0.9s ease;
+}
+body header .div_nav__list ul li:nth-child(2):hover .arrow {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transform-origin: 4px -5px;
+          transform-origin: 4px -5px;
+}
+@-webkit-keyframes anim1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes anim1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

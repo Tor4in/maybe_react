@@ -1,0 +1,72 @@
+.main_ {
+    &wraper {
+        text-align: center;
+
+        .sachen {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 100px 0 50px 0;
+
+            div {
+                // display: inline-block;
+                padding: 50px;
+
+                a {
+                    div {
+                        background-color: #bbb;
+                        width: 170px;
+                        height: 250px;
+                    }
+                }
+
+            }
+
+
+
+        }
+
+        .add {
+            width: 3%;
+            transition: transform 0.4s ease-in-out;
+            padding: 5px;
+            margin: 10px auto;
+        }
+        .info_bank{
+            
+            width: 100%;
+            background-color: #bbb;
+            
+            padding: 8px 20px;
+            margin:  30px 0 150px 0;
+            p{
+                padding: inherit;
+                margin: 20px ;
+                a{
+                    margin: 20px;
+                    padding: inherit;
+                    border: solid wheat 1px
+                }
+            }
+            
+        }
+
+    }
+
+    &name {
+
+        padding: 250px 0 120px 0;
+
+        font-size: 3em;
+
+        text-transform: uppercase;
+
+        &_sub {
+            font-weight: 500;
+            font-size: 1.2em;
+
+        }
+    }
+
+
+}
