@@ -30,7 +30,8 @@ aside {
 }
 
 html,
-body {
+body,
+#root {
     height: 100%;
     width: 100%;
     font-size: 100%;
@@ -89,17 +90,46 @@ h6 {
 
 /*          */
 
-.content {
-    max-width: 1220px;
-    margin: 0 auto;
-
-
-
-
+.bg_image {
+    
+    
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.bg_image .content{
+    
+    margin: 56px auto 0 auto;
+    flex: 1 0 auto;
+    width: 100%;
 }
 
-/*      */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   add sachen Button   */
+.add {
+    width: 3%;
+    display: inline-block;
+    transition: transform 0.4s ease-in-out;
+    padding: 5px;
+    margin: 10px auto;
+   
+}
 .add_off {
     display: none;
 }
@@ -108,9 +138,4 @@ h6 {
     transform: rotate(45deg);
 }
 
-.bg_image {
-    background: rgb(142, 156, 230);
-    background: linear-gradient(156deg, rgba(142, 156, 230, 0.32394964821866246) 10%, rgba(78, 205, 233, 0.25672275746235995) 100%);
-    width: 100%;
-    max-height: 490px;
-}
+/*  */

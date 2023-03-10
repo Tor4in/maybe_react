@@ -1,15 +1,19 @@
 .main_ {
     &wraper {
         text-align: center;
-
+        .wraper_title{
+            background: linear-gradient(156deg, rgba(142, 156, 230, 0.13067233729429273) 10%, rgba(78, 205, 233, 0.11666673505339631) 100%);
+            padding: 60px;
+        }
         .sachen {
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            margin: 100px 0 50px 0;
+            max-width: 1220px;
+            margin: 100px auto 50px auto;
 
             div {
-                // display: inline-block;
+                
                 padding: 50px;
 
                 a {
@@ -28,9 +32,11 @@
 
         .add {
             width: 3%;
+            display: inline-block;
             transition: transform 0.4s ease-in-out;
             padding: 5px;
             margin: 10px auto;
+           
         }
         .info_bank{
             

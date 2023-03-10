@@ -1,6 +1,10 @@
 .main_wraper {
   text-align: center;
 }
+.main_wraper .wraper_title {
+  background: linear-gradient(156deg, rgba(142, 156, 230, 0.1306723373) 10%, rgba(78, 205, 233, 0.1166667351) 100%);
+  padding: 60px;
+}
 .main_wraper .sachen {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9,7 +13,8 @@
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 100px 0 50px 0;
+  max-width: 1220px;
+  margin: 100px auto 50px auto;
 }
 .main_wraper .sachen div {
   padding: 50px;
@@ -21,6 +26,7 @@
 }
 .main_wraper .add {
   width: 3%;
+  display: inline-block;
   -webkit-transition: -webkit-transform 0.4s ease-in-out;
   transition: -webkit-transform 0.4s ease-in-out;
   transition: transform 0.4s ease-in-out;

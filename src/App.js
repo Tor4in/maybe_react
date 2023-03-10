@@ -27,6 +27,7 @@ function App() {
           <Route path='/form' element={<Form />} />
           <Route path='/faq' element={<FAQ/>} />
         </Routes>
+        
       </div>
       <Footer/>
 

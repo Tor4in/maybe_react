@@ -1,12 +1,14 @@
-p{
+.footer{
     text-align: center;
-    &.par{
+    padding: 20px;
+    
+    .par{
     
         
         margin: 20px 0 60px 0;
         
     }  
-    &.f_sub{
+    .f_sub{
         max-width: 600px;
         margin: 10px auto;
         font-size: 0.9em;
