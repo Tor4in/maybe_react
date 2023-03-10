@@ -1,3 +1,43 @@
 .wraper {
   max-width: 1220px;
+  text-align: center;
+  margin: 130px auto 0 auto;
+}
+.wraper p.first_subt {
+  font-weight: 600;
+  font-size: 1.3em;
+}
+.wraper .subscrypt {
+  max-width: 1220px;
+  margin: 0 auto;
+  text-align: left;
+}
+.wraper .subscrypt :first-child {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+.wraper .sachen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1220px;
+  margin: 50px auto 50px auto;
+}
+.wraper .sachen div {
+  padding: 50px;
+}
+.wraper .sachen div a div {
+  background-color: #bbb;
+  width: 170px;
+  height: 250px;
+}
+.wraper .drop {
+  text-transform: uppercase;
+  margin: 100px 0 45px 0;
+  font-size: 1.7em;
+  font-weight: 600;
 }

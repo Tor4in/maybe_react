@@ -1,3 +1,88 @@
-.par {
-  color: red;
+.wraper {
+  text-align: center;
+  margin: 56px auto 0 auto;
+}
+.wraper .sub_par {
+  margin: 0 0 25px 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 2.3em;
+}
+.wraper .text_wrap {
+  text-align: left;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+.wraper .text_wrap .tg_link a svg {
+  margin: 0 15px;
+}
+.wraper .text_wrap .tg_link a p {
+  display: inline-block;
+  font-size: 1.4em;
+  color: black;
+}
+.wraper .text_wrap .ul_lists ul {
+  margin: 25px 15px;
+}
+.wraper .text_wrap .ul_lists ul :first-child {
+  margin: 8px 0px;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.wraper .text_wrap .ul_lists ul :first-child::before {
+  content: "";
+  display: none;
+}
+.wraper .text_wrap .ul_lists ul li {
+  position: relative;
+  margin: 3px 15px;
+}
+.wraper .text_wrap .ul_lists ul li::before {
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: 4px;
+  width: 5px;
+  height: 5px;
+  background-color: #333333;
+  border-radius: 2px;
+  -webkit-transition: left 0.4s ease;
+  transition: left 0.4s ease;
+}
+.wraper .text_wrap .ul_lists ul li:hover::before {
+  content: "";
+  left: -9px;
+}
+.wraper .icons {
+  width: 100%;
+  height: 350px;
+  background-color: #9c31d9;
+  margin: 20px 0 75px 0;
+}
+.wraper .icons .wraper {
+  max-width: 1220px;
+}
+.wraper .icons .wraper div {
+  width: 250px;
+  height: 250px;
+  margin: 50px 25px;
+  background-color: #bbb;
+  display: inline-block;
+}
+.wraper .sub_footer {
+  width: 100%;
+}
+.wraper .sub_footer p {
+  margin: 25px;
+}
+.wraper .sub_footer .gr_text {
+  margin: 90px auto 24px auto;
+  width: 100%;
+  line-height: 2;
+}
+.wraper .sub_footer .gr_text p {
+  margin: 0 auto;
+  max-width: 350px;
+  font-size: 1.4em;
+  font-weight: 600;
 }

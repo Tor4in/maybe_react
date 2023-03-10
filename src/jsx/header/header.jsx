@@ -7,10 +7,13 @@ import { Link } from "react-router-dom";
 const Header = () => {
     return (
         <header >
-            
+
             <div className={s.div_logo}>
-                <img src={i} alt='img' />
-                <p><Link to='/'>Dropshipping </Link> </p>
+                <Link to='/'>
+                    <img src={i} alt='img' />
+                    <p>Dropshipping</p>
+                </Link>
+
             </div>
             <div className={s.div_nav__list}>
                 <ul >
@@ -27,7 +30,7 @@ const Header = () => {
                                 <li>Powerbank</li>
                             </ul>
                         </div>
-                       
+
                     </li>
                     <li> <Link to='/info' >Інфо</Link> </li>
                     <li> <Link to='/form' >Партнерська програма</Link> </li>
