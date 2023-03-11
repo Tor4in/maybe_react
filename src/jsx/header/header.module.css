@@ -45,6 +45,16 @@ body header .div_nav__list ul li a:hover {
   color: #d4a850;
   background-color: #47381c;
 }
+@media (max-width: 900px) {
+  body header .div_nav__list ul li a {
+    margin: 0 5px;
+  }
+}
+@media (max-width: 800px) {
+  body header .div_nav__list ul li a {
+    margin: 0 3px;
+  }
+}
 body header .div_nav__list ul li div.bar {
   padding: 30px;
   width: 160px;
@@ -83,6 +93,103 @@ body header .div_nav__list ul li:nth-child(2):hover .arrow {
           transform: rotate(90deg);
   -webkit-transform-origin: 4px -5px;
           transform-origin: 4px -5px;
+}
+body header .div_nav__list .brg_logo {
+  display: none;
+  margin: 30px;
+  position: relative;
+  z-index: 2;
+}
+body header .div_nav__list .brg_logo div {
+  -webkit-transition: -webkit-transform ease 0.5s;
+  transition: -webkit-transform ease 0.5s;
+  transition: transform ease 0.5s;
+  transition: transform ease 0.5s, -webkit-transform ease 0.5s;
+  width: 23px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: #000000;
+  z-index: 2;
+}
+body header .div_nav__list .brg_logo div:first-child {
+  border-radius: 3px 3px 0 0;
+}
+body header .div_nav__list .brg_logo div:nth-child(3) {
+  border-radius: 0 0 3px 3px;
+}
+body header .div_nav__list ul.brg_ul_list li {
+  display: block;
+  position: relative;
+}
+body header .div_nav__list ul.brg_ul_list li a {
+  color: white;
+  padding: 10px;
+  margin: 0 8px;
+  display: inline-block;
+  -webkit-transition: color 0.7s ease, background-color 0.7s ease;
+  transition: color 0.7s ease, background-color 0.7s ease;
+}
+body header .div_nav__list ul.brg_ul_list li a:hover {
+  color: #d4a850;
+  background-color: #47381c;
+}
+@media (max-width: 900px) {
+  body header .div_nav__list ul.brg_ul_list li a {
+    margin: 0 5px;
+  }
+}
+@media (max-width: 800px) {
+  body header .div_nav__list ul.brg_ul_list li a {
+    margin: 0 3px;
+  }
+}
+body header .div_nav__list ul.brg_ul_list li div.bar {
+  padding: 30px;
+  width: 40px;
+  position: absolute;
+  display: none;
+  left: 40px;
+  z-index: 33;
+}
+body header .div_nav__list ul.brg_ul_list li div.bar ul {
+  display: none;
+  bottom: -150px;
+  left: 16px;
+  width: 160px;
+  position: absolute;
+  background-color: #d1aa66;
+  color: #71429c;
+  padding: 20px;
+  -webkit-animation: anim1 1s ease;
+          animation: anim1 1s ease;
+}
+body header .div_nav__list ul.brg_ul_list li div.bar ul li {
+  padding: 4px;
+}
+body header .div_nav__list ul.brg_ul_list li:hover div.bar ul {
+  display: block;
+}
+body header .div_nav__list ul.brg_ul_list li:hover div.bar {
+  display: block;
+}
+body header .div_nav__list ul.brg_ul_list li:nth-child(2) {
+  position: relative;
+  -webkit-transition: all 0.9s ease;
+  transition: all 0.9s ease;
+}
+body header .div_nav__list ul.brg_ul_list li:nth-child(2):hover .arrow {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transform-origin: 4px -5px;
+          transform-origin: 4px -5px;
+}
+@media (max-width: 703px) {
+  body header .div_nav__list .main_ul {
+    display: none;
+  }
+  body header .div_nav__list .brg_logo {
+    display: inline-block;
+  }
 }
 @-webkit-keyframes anim1 {
   0% {

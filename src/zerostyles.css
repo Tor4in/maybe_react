@@ -123,11 +123,11 @@ h6 {
 
 /*   add sachen Button   */
 .add {
-    width: 3%;
-    display: inline-block;
+    
+    
     transition: transform 0.4s ease-in-out;
-    padding: 5px;
-    margin: 10px auto;
+    padding: 3px;
+    margin: 10px 0;
    
 }
 .add_off {
@@ -138,4 +138,85 @@ h6 {
     transform: rotate(45deg);
 }
 
+/*  Boorger manu*/
+
+
+.anim_active :nth-child(2){
+    
+    visibility: hidden;
+}
+.anim_active :nth-child(3){
+    animation: animOpen2 0.5s both;
+
+}
+.anim_active :first-child{
+    animation: animOpen1 0.5s both;
+    
+}
+
+.brg_bg {
+    width: 400px;
+    height: 100vh;
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 0;
+    background-color: #000;
+    animation: show 0.9s both;
+    z-index: 1;
+    padding: 25px;
+}
+@media (min-width: 704px){
+    .brg_bg{
+        display: none;
+    }          
+}
+
+@keyframes show {
+    0% {
+        transform: translateX(110%);
+    }
+
+    70% {
+        transform: translateX(-3%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+@keyframes animOpen1 {
+    0%{
+        transform: rotate(0deg);
+        border-radius: 3px 3px 0 0;
+    }
+    50%{
+        transform:rotate(45deg) translate(-5px, 5px);
+        border-radius: 3px 3px 3px 0;
+        background: #000;
+    }
+    100%{
+        transform:rotate(45deg) translate(3px, 8px);
+        border-radius: 3px 3px 3px 3px;
+        background: #ffffff;
+    }
+
+}
+@keyframes animOpen2 {
+    0%{
+        transform: rotate(0deg);
+        border-radius: 0px 0px 3px 3px;
+    }
+    50%{
+        transform:rotate(-45deg) translate(-5px, -5px);
+        border-radius: 3px 0px 3px 3px;
+        background: #000;
+    }
+    100%{
+        transform:rotate(-45deg) translate(3px, -8px);
+        border-radius: 3px 3px 3px 3px;
+        background: #ffffff;
+    }
+
+}
 /*  */

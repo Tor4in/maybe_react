@@ -29,15 +29,21 @@
 
 
         }
-
-        .add {
-            width: 3%;
-            display: inline-block;
-            transition: transform 0.4s ease-in-out;
-            padding: 5px;
-            margin: 10px auto;
-           
+        .add_wrap{
+            max-width: 200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-evenly;
+            .add {
+                
+                
+                transition: transform 0.4s ease-in-out;
+                padding: 5px;
+                margin: 10px 0;
+               
+            }
         }
+        
         .info_bank{
             
             width: 100%;

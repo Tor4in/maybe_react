@@ -42,9 +42,10 @@ body {
             }
 
             &_nav__list {
+                
 
                 ul {
-
+                    
                     li {
                         display: inline-block;
                         position: relative;
@@ -63,6 +64,20 @@ body {
                             }
 
                         }
+
+                        @media (max-width: 900px) {
+                            a {
+                                margin: 0 5px;
+                            }
+                        }
+
+                        @media (max-width: 800px) {
+                            a {
+                                margin: 0 3px;
+                            }
+                        }
+
+
 
                         div.bar {
                             padding: 30px;
@@ -116,11 +131,144 @@ body {
 
                     }
                 }
+
+                .brg_logo {
+                    display: none;
+                    margin: 30px;
+                    position: relative;
+                    z-index: 2;
+
+                    div {
+                        transition: transform ease 0.5s;
+                        width: 23px;
+                        height: 3px;
+                        margin: 5px 0;
+                        background-color: #000000;
+                        z-index: 2;
+
+                        &:first-child {
+                            border-radius: 3px 3px 0 0;
+                        }
+
+                        &:nth-child(3) {
+                            border-radius: 0 0 3px 3px;
+                        }
+
+
+                    }
+                }
+                
+                    
+                    ul.brg_ul_list {
+                        
+                        li {
+                            display: block;
+                            position: relative;
+    
+                            a {
+    
+                                color: white;
+                                padding: 10px;
+                                margin: 0 8px;
+                                display: inline-block;
+                                transition: color 0.7s ease, background-color 0.7s ease;
+    
+                                &:hover {
+                                    color: #d4a850;
+                                    background-color: #47381c;
+                                }
+                                
+                            }
+                            
+                            @media (max-width: 900px) {
+                                a {
+                                    margin: 0 5px;
+                                }
+                            }
+    
+                            @media (max-width: 800px) {
+                                a {
+                                    margin: 0 3px;
+                                }
+                            }
+    
+    
+    
+                            div.bar {
+                                padding: 30px;
+                                width: 40px;
+                                position: absolute;
+                                display: none;
+                                left: 40px;
+                                z-index: 33;
+    
+                            }
+    
+                            div.bar ul {
+                                display: none;
+                                bottom: -150px;
+                                left: 16px;
+                                width: 160px;
+                                position: absolute;
+                                background-color: #d1aa66;
+                                color: #71429c;
+                                padding: 20px;
+                                animation: anim1 1s ease;
+    
+                                
+                                li {
+                                    padding: 4px;
+                                }
+    
+                            }
+    
+                            &:hover div.bar ul {
+                                display: block;
+                                
+                            }
+    
+                            &:hover div.bar {
+                                display: block;
+                            }
+    
+                            &:nth-child(2) {
+    
+    
+                                position: relative;
+                                transition: all 0.9s ease;
+    
+    
+    
+    
+                                &:hover .arrow {
+                                    transform: rotate(90deg);
+                                    transform-origin: 4px -5px;
+                                }
+                            }
+    
+                        }
+                    }
+                
+                
+
+
+
+                @media (max-width: 703px) {
+                    .main_ul {
+                        display: none;
+                    }
+
+                    .brg_logo {
+                        display: inline-block;
+                    }
+                }
+                
             }
+
         }
     }
 
-
+    
 
     @keyframes anim1 {
         0% {
