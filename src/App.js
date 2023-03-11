@@ -1,4 +1,4 @@
-import Form from './jsx/form/form';
+import Ref from './jsx/referal/ref';
 
 import React from 'react';
 import './zerostyles.css';
@@ -14,6 +14,11 @@ import Footer from './jsx/footer/footer';
 function App() {
   
   
+  
+
+  
+  
+  
   return ( 
 
     <div className='bg_image'>
@@ -24,7 +29,7 @@ function App() {
           <Route path='/' element={<Main />} />
           <Route  path='/sachen' element={<Sachen/>}/>
           <Route path='/info' element={<Info/>} />
-          <Route path='/form' element={<Form />} />
+          <Route path='/referal_form' element={<Ref />} />
           <Route path='/faq' element={<FAQ/>} />
         </Routes>
         

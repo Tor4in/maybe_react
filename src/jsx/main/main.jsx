@@ -50,19 +50,19 @@ function Main() {
         <div>
           <Link to="/sachen">
             <div></div>
-            <p>350</p>
+            <p>500</p>
           </Link>
         </div>
         <div>
           <Link to="/sachen">
             <div></div>
-            <p>350</p>
+            <p>600</p>
           </Link>
         </div>
         <div ref={el1} className='add_off'>
           <Link to="/sachen">
             <div></div>
-            <p>650</p>
+            <p>700</p>
           </Link>
         </div>
         {/* <div ref={el2} className='add_off'>

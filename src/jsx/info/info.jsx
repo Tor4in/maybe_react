@@ -28,10 +28,10 @@ function Info() {
             </p>
 
           </a>
-          
+
         </div>
         <div className={s.ul_lists}>
-        <p>Дропшипінг</p>
+          <p>Дропшипінг</p>
           <ul>
             <li>Як це працює?</li>
             <li>Виставляєте товар, додавши свою націнку</li>
@@ -61,11 +61,11 @@ function Info() {
         </div>
       </div>
       <div className={s.icons}>
-          <div className={s.wraper}>
-              <div></div>
-              <div></div>
-              <div></div>
-          </div>
+        <div className={s.wraper}>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
       <div className={s.sub_footer}>
         <p>Політика конфіденційності</p>
@@ -73,7 +73,7 @@ function Info() {
         <p>Контактні дані</p>
         <p>Про компанію</p>
         <div className={s.gr_text}>
-<p> Якщо ти віднайдеш у своему серці турботу про когось іншого, ти досягнеш успіху </p>
+          <p> Якщо ти віднайдеш у своему серці турботу про когось іншого, ти досягнеш успіху </p>
         </div>
       </div>
 

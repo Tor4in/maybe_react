@@ -1,0 +1,101 @@
+.wraper {
+  text-align: center;
+}
+.wraper .title {
+  background-color: rgba(199, 198, 198, 0.5450980392);
+  margin: 0 auto 36px auto;
+  padding: 50px;
+}
+.wraper .title p:not(:first-child) {
+  padding: 10px;
+}
+.wraper .title :first-child {
+  font-size: 1.8em;
+  font-weight: 600;
+  margin: 10px 0 65px;
+  text-transform: uppercase;
+}
+.wraper .main_text {
+  margin: 0 auto 56px;
+}
+.wraper .main_text p:not(:first-child) {
+  font-size: 1.1em;
+  padding: 8px;
+  letter-spacing: 1px;
+}
+.wraper .main_text :first-child {
+  font-size: 1.2em;
+  margin: 0 0 56px;
+}
+.wraper .form {
+  max-width: 50%;
+  margin: auto;
+  line-height: 1;
+}
+.wraper .form form {
+  padding: 30px;
+  background-color: #194071;
+  border-radius: 8px;
+  -webkit-transition: -webkit-transform 0.3s ease, -webkit-box-shadow 0.5s ease;
+  transition: -webkit-transform 0.3s ease, -webkit-box-shadow 0.5s ease;
+  transition: transform 0.3s ease, box-shadow 0.5s ease;
+  transition: transform 0.3s ease, box-shadow 0.5s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.5s ease;
+}
+.wraper .form form input {
+  background: none;
+  border: none;
+  border-bottom: solid rgba(2, 2, 2, 0.3882352941) 1px;
+}
+.wraper .form form:hover {
+  -webkit-box-shadow: -3px 3px 8px 3px #194071;
+          box-shadow: -3px 3px 8px 3px #194071;
+  -webkit-transform: translate(0px, -1px);
+          transform: translate(0px, -1px);
+}
+.wraper .form form .group_social {
+  margin: 20px 0;
+  text-align: left;
+}
+.wraper .form form .group_social div {
+  padding: 5px 0;
+}
+.wraper .form form .group_mail_name, .wraper .form form .group_data div {
+  position: relative;
+  padding: 8px 0 0 0;
+}
+.wraper .form form .group_mail_name input, .wraper .form form .group_data div input {
+  height: 30px;
+  margin: 12px 10px 0 0;
+  outline: none;
+  width: 100%;
+}
+.wraper .form form .group_mail_name input:focus ~ label, .wraper .form form .group_data div input:focus ~ label {
+  -webkit-transform: translate(-8px, -16px) scale(1.2);
+          transform: translate(-8px, -16px) scale(1.2);
+}
+.wraper .form form .group_mail_name input:valid ~ label, .wraper .form form .group_data div input:valid ~ label {
+  -webkit-transform: translate(-8px, -16px) scale(1.2);
+          transform: translate(-8px, -16px) scale(1.2);
+}
+.wraper .form form .group_mail_name label, .wraper .form form .group_data div label {
+  cursor: text;
+  position: absolute;
+  font-size: 0.8em;
+  top: 24px;
+  left: 20px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.wraper .form form .radio {
+  text-align: left;
+}
+.wraper .form form .radio p {
+  display: inline-block;
+}
+.wraper .form form button {
+  border: none;
+  background-color: #305d8d;
+  border-radius: 8px;
+  padding: 12px 45px;
+  margin: 10px;
+}

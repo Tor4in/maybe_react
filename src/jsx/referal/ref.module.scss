@@ -1,0 +1,135 @@
+.wraper {
+    text-align: center;
+    .title {
+        
+
+        background-color: #c7c6c68b;
+        margin: 0 auto 36px auto;
+        padding: 50px;
+
+        p:not(:first-child) {
+            padding: 10px;
+        }
+
+        :first-child {
+            font-size: 1.8em;
+            font-weight: 600;
+            margin: 10px 0 65px;
+            text-transform: uppercase;
+        }
+
+
+    }
+
+    .main_text {
+        margin: 0 auto 56px ;
+        p:not(:first-child){
+            font-size: 1.1em;
+            padding: 8px;
+            letter-spacing: 1px;
+        }
+        :first-child{
+            font-size: 1.2em;
+            margin: 0 0 56px ;
+        }
+    }
+
+
+    .form {
+        max-width: 50%;
+
+        margin: auto;
+        line-height: 1;
+
+
+        form {
+
+
+            padding: 30px;
+            background-color: #194071;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.5s ease;
+
+            input {
+
+                background: none;
+                border: none;
+                border-bottom: solid #02020263 1px;
+
+
+            }
+
+
+
+
+
+            &:hover {
+                box-shadow: -3px 3px 8px 3px #194071;
+                transform: translate(0px, -1px);
+            }
+
+
+
+
+            .group_ {
+                &social {
+                    margin: 20px 0;
+                    text-align: left;
+                    div {
+                        padding: 5px 0;
+                    }
+                }
+
+                &mail_name,
+                &data div {
+
+                    input {
+                        height: 30px;
+                        margin: 12px 10px 0 0;
+                        outline: none;
+                        width: 100%;
+
+                        &:focus~label {
+                            transform: translate(-8px, -16px) scale(1.2);
+
+                        }
+
+                        &:valid~label {
+                            transform: translate(-8px, -16px) scale(1.2);
+                        }
+                    }
+
+                    position: relative;
+                    padding: 8px 0 0 0;
+
+                    label {
+                        cursor: text;
+                        position: absolute;
+                        font-size: 0.8em;
+                        top: 24px;
+                        left: 20px;
+                        transition: all 0.4s ease;
+                    }
+
+                }
+            }
+
+            .radio {
+                text-align: left;
+                p {
+                    display: inline-block;
+                }
+
+            }
+
+            button {
+                border: none;
+                background-color: #305d8d;
+                border-radius: 8px;
+                padding: 12px 45px;
+                margin: 10px;
+            }
+        }
+    }
+
+}

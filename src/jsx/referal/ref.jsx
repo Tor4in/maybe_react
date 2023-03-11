@@ -1,10 +1,24 @@
 import {React} from "react";
-import s from './form.module.css';
+import s from './ref.module.css';
 
 
-function Form() {
+function Ref() {
     return (
-        <div className={s.form}>
+        <div className={s.wraper}>
+
+        <div className={s.title}>
+            <p> referral </p>
+            <p>Якщо ви бажаєте працювати по системі дропшипінг, вам не потрібно реєструватись у партнерській програмі.</p>
+            <p>Достатньо заповнити форму, яка є під кожним товаром на сайті.</p>
+        </div>
+        <div className={s.main_text}>
+            <p>100 UAH з кожного продажу вашого рефералу</p>
+            <p>Після заповлення форми вам надається реферальне посилання або реферальний промокод. </p>
+            <p>З кожного продажу користувача, що здійснюється за вашими рефералами ви отримуватимете 100 UAH фіксовано. </p>
+            <p>Пілся заповнення форми, вам надається доступ до таблиць з продажами ваших рефералів. </p>
+        </div>
+
+            <div className={s.form}>
             <form action="#" method="post">
                 <div className={s.group_mail_name}>
                     <input type="text" name="email" id="mail" required />
@@ -66,9 +80,11 @@ function Form() {
                 <button>Send</button>
             </form>
         </div>
+        </div>
+        
 
 
     )
 }
 
-export default Form;
+export default Ref;

@@ -1,0 +1,28 @@
+.wraper {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.wraper p {
+  margin: 8px 0;
+}
+.wraper p.b {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin: 56px 0 55px;
+}
+.wraper p.gray {
+  display: inline-block;
+  color: #bbb;
+}
+.wraper p.sm {
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  max-width: 650px;
+}
+.wraper :first-child {
+  display: inline-block;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 56px 10px 0 0;
+}

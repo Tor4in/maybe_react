@@ -15,19 +15,6 @@ function Sachen() {
             <p>600</p>
           </Link>
         </div>
-
-        <div>
-          <Link to="/sachen">
-            <div></div>
-            <p>350</p>
-          </Link>
-        </div>
-        <div>
-          <Link to="/sachen">
-            <div></div>
-            <p>350</p>
-          </Link>
-        </div>
         <div >
           <Link to="/sachen">
             <div></div>
@@ -38,29 +25,32 @@ function Sachen() {
         <div>
           <Link to="/sachen">
             <div></div>
-            <p>350</p>
+            <p>700</p>
           </Link>
         </div>
         <div>
           <Link to="/sachen">
             <div></div>
-            <p>350</p>
+            <p>500</p>
           </Link>
         </div>
-        
+        <div >
+          <Link to="/sachen">
+            <div></div>
+            <p>500</p>
+          </Link>
+        </div>
 
         <div>
           <Link to="/sachen">
             <div></div>
-            <p>350</p>
+            <p>600</p>
           </Link>
         </div>
-        <div>
-          <Link to="/sachen">
-            <div></div>
-            <p>350</p>
-          </Link>
-        </div>
+        
+        
+
+       
       </div>
       <div className={s.subscrypt}>
       <p>***) - рекомендована маржинальність товару (чистий прибуток з одного продажу)</p>

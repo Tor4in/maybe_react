@@ -33,7 +33,7 @@ const Header = () => {
 
                     </li>
                     <li> <Link to='/info' >Інфо</Link> </li>
-                    <li> <Link to='/form' >Партнерська програма</Link> </li>
+                    <li> <Link to='/referal_form' >Партнерська програма</Link> </li>
                     <li> <Link to='/faq' >FAQ</Link> </li>
                 </ul>
             </div>
