@@ -13,7 +13,7 @@ function Main() {
   let imgel = React.createRef()
   let sachel = React.createRef()
 
-  let show = () => {
+  let show = () => { 
 
     if (el1 && imgel) {
       el1.current.classList.toggle('add_off')

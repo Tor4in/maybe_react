@@ -31,7 +31,7 @@ function Ref() {
 
 
                 <div className={s.group_social}>
-                    <div className="inst">
+                    <div>
                         <input type="checkbox" name="socil" id="inst" />
                         <label htmlFor="inst" >Instagram</label>
                     </div>
@@ -76,7 +76,7 @@ function Ref() {
                         <label htmlFor="coments">Comments</label>
                     </div>
                 </div>
-
+ 
                 <button>Send</button>
             </form>
         </div>

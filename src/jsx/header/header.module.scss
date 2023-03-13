@@ -164,6 +164,7 @@ body {
                         li {
                             display: block;
                             position: relative;
+
     
                             a {
     
@@ -194,58 +195,39 @@ body {
     
     
     
-                            div.bar {
-                                padding: 30px;
-                                width: 40px;
-                                position: absolute;
-                                display: none;
-                                left: 40px;
-                                z-index: 33;
+                            
     
-                            }
+                            
     
-                            div.bar ul {
-                                display: none;
-                                bottom: -150px;
-                                left: 16px;
-                                width: 160px;
-                                position: absolute;
-                                background-color: #d1aa66;
-                                color: #71429c;
-                                padding: 20px;
-                                animation: anim1 1s ease;
+                            
     
+                        }
+                        
+                        ul.bar{
+                            
                                 
-                                li {
-                                    padding: 4px;
-                                }
-    
-                            }
-    
-                            &:hover div.bar ul {
-                                display: block;
+                            padding: 0 0  20px 30px;
+                            
+                            
+                            
+                            
+                            li {
                                 
-                            }
-    
-                            &:hover div.bar {
-                                display: block;
-                            }
-    
-                            &:nth-child(2) {
-    
-    
+                                padding: 6px;
+                                color: white;
                                 position: relative;
-                                transition: all 0.9s ease;
-    
-    
-    
-    
-                                &:hover .arrow {
-                                    transform: rotate(90deg);
-                                    transform-origin: 4px -5px;
+                                &::before{
+                                    content: '';
+                                    position: absolute;
+                                    left: -10px;
+                                    top: 9px;
+                                    background-color: #bbb;
+                                    width: 5px;
+                                    height: 5px;
+                                    border-radius: 2px;
                                 }
-                            }
-    
+                            } 
+
                         }
                     }
                 

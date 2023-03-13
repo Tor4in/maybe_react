@@ -153,6 +153,14 @@ h6 {
     animation: animOpen1 0.5s both;
     
 }
+.anim_close :nth-child(3){
+    animation: animClose2 0.5s both;
+
+}
+.anim_close :first-child{
+    animation: animClose1 0.5s both;
+    
+}
 
 .brg_bg {
     width: 400px;
@@ -165,6 +173,10 @@ h6 {
     animation: show 0.9s both;
     z-index: 1;
     padding: 25px;
+}
+.brg_bg_closed{
+    animation: close 0.9s both;
+    
 }
 @media (min-width: 704px){
     .brg_bg{
@@ -185,6 +197,20 @@ h6 {
         transform: translateX(0%);
     }
 }
+@keyframes close {
+    0% {
+        transform: translateX(0%);
+    }
+
+    30% {
+        transform: translateX(-3%);
+    }
+
+    100% {
+        transform: translateX(110%);
+    }
+}
+
 @keyframes animOpen1 {
     0%{
         transform: rotate(0deg);
@@ -216,6 +242,42 @@ h6 {
         transform:rotate(-45deg) translate(3px, -8px);
         border-radius: 3px 3px 3px 3px;
         background: #ffffff;
+    }
+
+}
+@keyframes animClose2 {
+    0%{
+        transform:rotate(-45deg) translate(3px, -8px);
+        border-radius: 3px 3px 3px 3px;
+        background: #ffffff;
+    }
+    
+    50%{
+        transform:rotate(-45deg) translate(-5px, -5px);
+        border-radius: 3px 0px 3px 3px;
+        background: #000;
+    }
+    100%{
+        transform: rotate(0deg);
+        border-radius: 0px 0px 3px 3px;
+    }
+
+}
+@keyframes animClose1 {
+    0%{
+        transform:rotate(45deg) translate(3px, 8px);
+        border-radius: 3px 3px 3px 3px;
+        background: #ffffff;
+    }
+    
+    50%{
+        transform:rotate(45deg) translate(-5px, 5px);
+        border-radius: 3px 3px 3px 0;
+        background: #000;
+    }
+    100%{
+        transform: rotate(0deg);
+        border-radius: 3px 3px 0 0;
     }
 
 }
