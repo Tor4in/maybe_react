@@ -181,7 +181,8 @@ h6 {
 @media (min-width: 704px){
     .brg_bg{
         display: none;
-    }          
+    } 
+             
 }
 
 @keyframes show {

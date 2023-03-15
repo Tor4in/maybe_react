@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 import s from './main.module.css';
 import '../../zerostyles.css'
 import svg from './add.svg';
+import wasden_image from './wasden.jpeg';
 
 
 function Main() {
-
+  
 
   let el1 = React.createRef()
   
@@ -77,6 +78,7 @@ function Main() {
       </div>
 
       <div className={s.info_bank}>
+        <img src={wasden_image} alt="" />
         <p>Виникли питання?</p>
 
         <p><Link>Банк інформації</Link></p>

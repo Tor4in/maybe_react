@@ -13,6 +13,7 @@
     .text_wrap{
         text-align: left;
         max-width: 1220px;
+        padding: 20px;
         margin: 0 auto;
         .tg_link {
             a{
@@ -75,8 +76,9 @@
         margin: 20px 0 75px 0;
         .wraper{
             max-width: 1220px;
-            
-            
+            height: 100%;
+            justify-content: space-around;
+                align-items: center;
             
             div{
                 
@@ -86,6 +88,53 @@
                 background-color: #bbb;
                 display: inline-block;
             }
+        }
+        @media (max-width: 900px){
+            .wraper{
+                display: flex;
+                div{
+                    flex: 0 1 auto;
+                    margin: 45px 15px;
+                }
+            }
+            
+        }
+        @media (max-width: 850px){
+            &{
+                height: 270px;
+
+            }
+            .wraper{
+                display: flex;
+                
+                
+                div{
+                    
+                    width: 220px;
+                    height: 220px;
+                    flex: 0 1 auto;
+                    
+                }
+            }
+            
+        }
+        @media (max-width: 670px){
+            &{
+                height: 200px;
+
+            }
+            .wraper{
+                display: flex;
+                
+                
+                div{
+                    width: 170px;
+                    height: 170px;
+                    flex: 0 1 auto;
+                    
+                }
+            }
+            
         }
     }
     .sub_footer{

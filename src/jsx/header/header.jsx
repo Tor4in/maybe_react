@@ -11,10 +11,6 @@ const Header = () => {
     let weit = () => {
         bg_manu.current.classList.toggle('brg_bg')
         bg_manu.current.classList.toggle('add_off')
-
-        // console.log(1)
-        // console.log(bg_manu.current.classList)
-        // console.log(anim_el.current.classList)
     }
 
     let close = () => {
@@ -25,9 +21,7 @@ const Header = () => {
             bg_manu.current.classList.toggle('brg_bg_closed')
             bg_manu.current.classList.toggle('brg_bg')
         }, 900)
-        // console.log(2)
-        // console.log(bg_manu.current.classList)
-        // console.log(anim_el.current.classList)
+        
     }
 
 
