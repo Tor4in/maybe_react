@@ -39,11 +39,32 @@
                     background-color: #bbb;
                     width: 170px;
                     height: 250px;
+                    img{
+                        width: 20px;
+                    }
                 }
             }
 
         }
+        @media (max-width: 808px) {
+            a div {
+                width: 230px;
+                height: 270px;
+                
 
+            }
+        }
+        @media (max-width: 659px) {
+            & {
+                width: 100%;
+                a div{
+                    width: 100%;
+                    height: 390px;
+                    
+                }
+
+            }
+        }
 
 
     }

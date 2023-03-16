@@ -12,17 +12,18 @@
             justify-content: space-around;
             flex-wrap: wrap;
             max-width: 1220px;
-            margin: 100px 0 50px 0;
+            margin: 100px auto 40px auto;
 
             div {
-
-                padding: 50px;
-                
+                margin: 20px;
                 a {
                     div {
-                        background-color: #bbb;
+                        margin: 0;
                         width: 170px;
-                        height: 250px;
+                        
+                        img{
+                            width: 100%;
+                        }
                     }
                     
 
@@ -31,17 +32,19 @@
                 @media (max-width: 808px) {
                     a div {
                         width: 230px;
-                        height: 270px;
+                        
                         
 
                     }
                 }
                 @media (max-width: 659px) {
                     & {
+                        
                         width: 100%;
                         a div{
-                            width: 100%;
-                            height: 390px;
+                            margin: 0 auto;
+                            width: 70%;
+                            
                             
                         }
 
@@ -71,26 +74,55 @@
         }
 
         .info_bank {
-
-
-
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 250px;
+            overflow: hidden;
+            @media (min-width: 950px){
+                &{
+                    height: 280px;
+                }
+            }
+            @media (min-width: 1100px){
+                &{
+                    height: 290px;
+                }
+            }
+            @media (min-width: 1300px){
+                &{
+                    height: 310px;
+                }
+            }
             img {
+                left: 0;
+                
                 width: 100%;
-
+                position: absolute;
+                z-index: -1;
             }
 
-            padding: 8px 0;
-            margin: 30px 0 150px 0;
+            padding: 60px 0;
+            margin: 50px 0 150px 0;
 
             p {
-
-                padding: inherit;
-                margin: 20px;
-
+               
+                color: white;
+                
+                
+                
                 a {
-                    margin: 20px;
-                    padding: inherit;
-                    border: solid wheat 1px
+                    
+                    padding: 5px 25px;
+                    border-radius: 4px;
+                    color: white;
+                    border: solid wheat 1px;
+                    &:hover{
+                        background-color: #ffffff44;
+                    }
                 }
             }
 

@@ -14,20 +14,21 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 1220px;
-  margin: 100px 0 50px 0;
+  margin: 100px auto 40px auto;
 }
 .main_wraper .sachen div {
-  padding: 50px;
+  margin: 20px;
 }
 .main_wraper .sachen div a div {
-  background-color: #bbb;
+  margin: 0;
   width: 170px;
-  height: 250px;
+}
+.main_wraper .sachen div a div img {
+  width: 100%;
 }
 @media (max-width: 808px) {
   .main_wraper .sachen div a div {
     width: 230px;
-    height: 270px;
   }
 }
 @media (max-width: 659px) {
@@ -35,8 +36,8 @@
     width: 100%;
   }
   .main_wraper .sachen div a div {
-    width: 100%;
-    height: 390px;
+    margin: 0 auto;
+    width: 70%;
   }
 }
 .main_wraper .add_wrap {
@@ -61,20 +62,58 @@
   margin: 10px 0;
 }
 .main_wraper .info_bank {
-  padding: 8px 0;
-  margin: 30px 0 150px 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 250px;
+  overflow: hidden;
+  padding: 60px 0;
+  margin: 50px 0 150px 0;
+}
+@media (min-width: 950px) {
+  .main_wraper .info_bank {
+    height: 280px;
+  }
+}
+@media (min-width: 1100px) {
+  .main_wraper .info_bank {
+    height: 290px;
+  }
+}
+@media (min-width: 1300px) {
+  .main_wraper .info_bank {
+    height: 310px;
+  }
 }
 .main_wraper .info_bank img {
+  left: 0;
   width: 100%;
+  position: absolute;
+  z-index: -1;
 }
 .main_wraper .info_bank p {
-  padding: inherit;
-  margin: 20px;
+  color: white;
 }
 .main_wraper .info_bank p a {
-  margin: 20px;
-  padding: inherit;
+  padding: 5px 25px;
+  border-radius: 4px;
+  color: white;
   border: solid wheat 1px;
+}
+.main_wraper .info_bank p a:hover {
+  background-color: rgba(255, 255, 255, 0.2666666667);
 }
 .main_name {
   padding: 250px 0 120px 0;

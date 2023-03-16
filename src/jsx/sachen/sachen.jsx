@@ -1,9 +1,17 @@
 import React from "react";
 import s from './sachen.module.css';
 import { Link } from 'react-router-dom';
-
+import Product from "./product_component";
+import i from './add.svg'
 
 function Sachen() {
+  let el1 = {
+      'name': "Vitali",
+      'text': 'hello',
+      'img': [i, i,],
+
+  }
+
   return (
 
     <div className={s.wraper}>
@@ -18,14 +26,14 @@ function Sachen() {
         <div >
           <Link to="/sachen">
             <div></div>
-            <p>600</p>
+            <p>300</p>
           </Link>
         </div>
 
         <div>
           <Link to="/sachen">
             <div></div>
-            <p>700</p>
+            <p>300</p>
           </Link>
         </div>
         <div>
@@ -57,6 +65,7 @@ function Sachen() {
       <p>Перед початком співпраці - <Link to='/info'>ІНФО</Link> </p>
       </div>
       <p className={s.drop}>drop</p>
+      <Product text={el1.text} img={el1.img[0]}/>
     </div>
   );
 }

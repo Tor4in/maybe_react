@@ -35,6 +35,24 @@
   width: 170px;
   height: 250px;
 }
+.wraper .sachen div a div img {
+  width: 20px;
+}
+@media (max-width: 808px) {
+  .wraper .sachen a div {
+    width: 230px;
+    height: 270px;
+  }
+}
+@media (max-width: 659px) {
+  .wraper .sachen {
+    width: 100%;
+  }
+  .wraper .sachen a div {
+    width: 100%;
+    height: 390px;
+  }
+}
 .wraper .drop {
   text-transform: uppercase;
   margin: 100px 0 45px 0;

@@ -3,7 +3,12 @@ import { Link } from "react-router-dom";
 import s from './main.module.css';
 import '../../zerostyles.css'
 import svg from './add.svg';
-import wasden_image from './wasden.jpeg';
+import wasden_image from './wasden.webp';
+
+import airpods_2 from './media/airpods_2.webp'
+import airpods_3 from './media/airpods_3.webp'
+import airpods_pro from './media/airpods_pro.webp'
+import watch_ultra from './media/watch_ultra.webp'
 
 
 function Main() {
@@ -43,27 +48,28 @@ function Main() {
       <div className={s.sachen}>
         <div>
           <Link to="/sachen">
-            <div></div>
+            <div><img src={airpods_2} alt="" /></div>
+            
             <p>600</p>
           </Link>
         </div>
 
         <div>
           <Link to="/sachen">
-            <div></div>
-            <p>500</p>
+          <div><img src={airpods_3} alt="" /></div>
+            <p>300</p>
           </Link>
         </div>
         <div>
           <Link to="/sachen">
-            <div></div>
-            <p>600</p>
+          <div><img src={airpods_pro} alt="" /></div>
+            <p>300</p>
           </Link>
         </div>
         <div ref={el1} className='add_off'>
           <Link to="/sachen">
-            <div></div>
-            <p>700</p>
+          <div><img src={watch_ultra} alt="" /></div>
+            <p>500</p>
           </Link>
         </div>
         
