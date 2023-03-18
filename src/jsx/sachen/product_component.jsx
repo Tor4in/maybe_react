@@ -1,19 +1,21 @@
 import React from "react";
 import s from './product.module.css';
-import pods2_1 from '../../product images/2/IMG_3351.webp'
+
 
 
 function Product_Component(props) {
 
 
     let el = props.em
+    
     return (
 
         <div className={s.wraper}>
             <div className={s.product_wrap}>
                 <div className={s.swiper_wraper}>
-                    {el.images[0]}
-                    {console.log(el.images[0])}
+                    
+                    <img src={el.images[0]} alt="" />
+                    
 
                 </div>
                 <div className={s.text}>

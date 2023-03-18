@@ -8,6 +8,11 @@
             width: 400px;
             height: 400px;
             background-color: #bbb;
+            overflow: hidden;
+            img{
+                width: 100%;
+                
+            }
         }
         .text{
             :first-child:not(li){

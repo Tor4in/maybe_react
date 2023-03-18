@@ -1,8 +1,8 @@
 import React from "react";
 import s from './sachen.module.css';
 import { Link } from 'react-router-dom';
-import Product from "./product_component";
-import i from './add.svg'
+
+
 
 function Sachen() {
   

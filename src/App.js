@@ -10,7 +10,8 @@ import Info from './jsx/info/info';
 import FAQ from './jsx/faq/faq';
 import Footer from './jsx/footer/footer';
 import Product_Component from './jsx/sachen/product_component';
-import pods2_1 from './product images/2/IMG_3351.webp'
+import pods2_1 from './product images/2/IMG_3317.webp'
+import pods2_2 from './product images/2/IMG_3322.webp'
 
 
 
@@ -19,7 +20,7 @@ function App() {
   
   const productList = [
     {
-      'images': [ {pods2_1}],
+      'images': [ pods2_1, pods2_2],
       'title1': 'Навушники AirPods 2',
       'title2': ' Lux Copy',
       
@@ -55,7 +56,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Main />} />
           <Route path='/sachen' element={<Sachen />} />
-
+          {/* eslint-disable-next-line */}
           <Route path='/sachen/0' element={<Product_Component em={productList[0]} />} />
 
 
