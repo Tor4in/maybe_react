@@ -212,20 +212,22 @@ body {
                             
                             
                             li {
-                                
-                                padding: 6px;
-                                color: white;
-                                position: relative;
-                                &::before{
-                                    content: '';
-                                    position: absolute;
-                                    left: -10px;
-                                    top: 9px;
-                                    background-color: #bbb;
-                                    width: 5px;
-                                    height: 5px;
-                                    border-radius: 2px;
+                                a{
+                                    padding: 6px;
+                                    color: white;
+                                    position: relative;
+                                    &::before{
+                                        content: '';
+                                        position: absolute;
+                                        left: -10px;
+                                        top: 9px;
+                                        background-color: #bbb;
+                                        width: 5px;
+                                        height: 5px;
+                                        border-radius: 2px;
+                                    }
                                 }
+                                
                             } 
 
                         }

@@ -146,12 +146,12 @@ body header .div_nav__list ul.brg_ul_list li a:hover {
 body header .div_nav__list ul.brg_ul_list ul.bar {
   padding: 0 0 20px 30px;
 }
-body header .div_nav__list ul.brg_ul_list ul.bar li {
+body header .div_nav__list ul.brg_ul_list ul.bar li a {
   padding: 6px;
   color: white;
   position: relative;
 }
-body header .div_nav__list ul.brg_ul_list ul.bar li::before {
+body header .div_nav__list ul.brg_ul_list ul.bar li a::before {
   content: "";
   position: absolute;
   left: -10px;

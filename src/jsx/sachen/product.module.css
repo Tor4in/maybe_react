@@ -1,0 +1,27 @@
+.wraper {
+  padding: 20px;
+  width: 100%;
+}
+.wraper .product_wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+.wraper .product_wrap .swiper_wraper {
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+  background-color: #bbb;
+}
+.wraper .product_wrap .text :first-child:not(li) {
+  font-weight: 700;
+  font-size: 1.8em;
+  display: inline-block;
+}
+.wraper .product_wrap .text :nth-child(2) {
+  display: inline-block;
+}
+.wraper .form_wrap {
+  text-align: center;
+}

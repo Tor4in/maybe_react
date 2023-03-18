@@ -5,12 +5,7 @@ import Product from "./product_component";
 import i from './add.svg'
 
 function Sachen() {
-  let el1 = {
-      'name': "Vitali",
-      'text': 'hello',
-      'img': [i, i,],
-
-  }
+  
 
   return (
 
@@ -65,7 +60,7 @@ function Sachen() {
       <p>Перед початком співпраці - <Link to='/info'>ІНФО</Link> </p>
       </div>
       <p className={s.drop}>drop</p>
-      <Product text={el1.text} img={el1.img[0]}/>
+      
     </div>
   );
 }
