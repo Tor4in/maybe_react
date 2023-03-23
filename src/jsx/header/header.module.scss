@@ -59,8 +59,8 @@ body {
                             transition: color 0.7s ease, background-color 0.7s ease;
 
                             &:hover {
-                                color: #d4a850;
-                                background-color: #47381c;
+                                color: #ffffff;
+                                background-color: #000000;
                             }
 
                         }
@@ -81,7 +81,7 @@ body {
 
                         div.bar {
                             padding: 30px;
-                            width: 160px;
+                            width: 200px;
                             position: absolute;
                             display: none;
                             left: 10px;
@@ -90,24 +90,28 @@ body {
 
                         div.bar>ul {
                             display: none;
-                            bottom: -160px;
+                            top: 0px;
                             left: 6px;
-                            width: 160px;
+                            width: 200px;
                             position: absolute;
-                            background-color: #d1aa66;
-                            color: #71429c;
+                            background-color: #000000;
+                            color: #ffffff;
                             padding: 20px;
                             animation: anim1 1s ease;
+                            z-index: 22;
 
-
+                            a{
+                                color: white;
+                            }
                             li {
                                 padding: 4px;
                             }
-
+                            
                         }
 
                         &:hover div.bar>ul {
-                            display: block;
+                            display: flex;
+                            flex-direction: column;
                         }
 
                         &:hover div.bar {
@@ -174,10 +178,7 @@ body {
                                 display: inline-block;
                                 transition: color 0.7s ease, background-color 0.7s ease;
     
-                                &:hover {
-                                    color: #d4a850;
-                                    background-color: #47381c;
-                                }
+                               
                                 
                             }
                             

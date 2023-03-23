@@ -42,8 +42,8 @@ body header .div_nav__list ul li a {
   transition: color 0.7s ease, background-color 0.7s ease;
 }
 body header .div_nav__list ul li a:hover {
-  color: #d4a850;
-  background-color: #47381c;
+  color: #ffffff;
+  background-color: #000000;
 }
 @media (max-width: 900px) {
   body header .div_nav__list ul li a {
@@ -57,28 +57,38 @@ body header .div_nav__list ul li a:hover {
 }
 body header .div_nav__list ul li div.bar {
   padding: 30px;
-  width: 160px;
+  width: 200px;
   position: absolute;
   display: none;
   left: 10px;
 }
 body header .div_nav__list ul li div.bar > ul {
   display: none;
-  bottom: -160px;
+  top: 0px;
   left: 6px;
-  width: 160px;
+  width: 200px;
   position: absolute;
-  background-color: #d1aa66;
-  color: #71429c;
+  background-color: #000000;
+  color: #ffffff;
   padding: 20px;
   -webkit-animation: anim1 1s ease;
           animation: anim1 1s ease;
+  z-index: 22;
+}
+body header .div_nav__list ul li div.bar > ul a {
+  color: white;
 }
 body header .div_nav__list ul li div.bar > ul li {
   padding: 4px;
 }
 body header .div_nav__list ul li:hover div.bar > ul {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 body header .div_nav__list ul li:hover div.bar {
   display: block;
@@ -128,10 +138,6 @@ body header .div_nav__list ul.brg_ul_list li a {
   display: inline-block;
   -webkit-transition: color 0.7s ease, background-color 0.7s ease;
   transition: color 0.7s ease, background-color 0.7s ease;
-}
-body header .div_nav__list ul.brg_ul_list li a:hover {
-  color: #d4a850;
-  background-color: #47381c;
 }
 @media (max-width: 900px) {
   body header .div_nav__list ul.brg_ul_list li a {

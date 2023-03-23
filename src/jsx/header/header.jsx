@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import s from './header.module.css'
 import i from "./media/logo_img.jpg"
 import '../../zerostyles.css'
 import { Link } from "react-router-dom";
+
 
 
 const Header = () => {
@@ -23,17 +24,21 @@ const Header = () => {
         }, 900)
 
     }
+   
+   
+    
 
-
-
-
+    
     let anim_el_state = () => {
+
         let anim_open = () => {
+
             anim_el.current.classList.contains('anim_close') ? anim_el.current.classList.toggle('anim_close')
                 || anim_el.current.classList.toggle('anim_active') : anim_el.current.classList.toggle('anim_active')
 
         }
         let anim_close = () => {
+
             anim_el.current.classList.contains('anim_active') ? anim_el.current.classList.toggle('anim_active')
                 || anim_el.current.classList.toggle('anim_close') : anim_el.current.classList.toggle('anim_close')
         }
@@ -41,11 +46,21 @@ const Header = () => {
         anim_el.current.classList.contains('anim_active') ? anim_close() : anim_open()
 
     }
-
+    let scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            left : 0, 
+            behavior: "smooth"
+        })
+        close()
+        anim_el.current.classList.contains('anim_active') ? anim_el.current.classList.toggle('anim_active')
+                || anim_el.current.classList.toggle('anim_close') : anim_el.current.classList.toggle('anim_close')
+    }
 
 
 
     let animAdd = () => {
+
         if (anim_el) {
 
             anim_el_state()
@@ -58,12 +73,50 @@ const Header = () => {
     }
 
 
+    const [linkList, setLinkList] = React.useState([
+        {
+            'id': 0,
+            'text': 'Airpods 2',
+            'link': '/sachen/0',
+        },
+        {
+            'id': 1,
+            'text': 'Airpods 3',
+            'link': '/sachen/1',
+        },
+        {
+            'id': 2,
+            'text': 'Airpods pro',
+            'link': '/sachen/2',
+        },
+        {
+            'id': 3,
+            'text': 'Watch GS8 mini',
+            'link': '/sachen/3',
+        },
+        {
+            'id': 4,
+            'text': 'Watch GS8+ Ultra',
+            'link': '/sachen/4',
+        },
+        {
+            'id': 5,
+            'text': 'XO PR1 30',
+            'link': '/sachen/5',
+        },
+        {
+            'id': 6,
+            'text': 'Powerbank',
+            'link': '/sachen/6',
+        },
+    ])
+
 
     return (
         <header >
 
             <div className={s.div_logo}>
-                <Link to='/'>
+                <Link to='/' onClick={scrollToTop}>
                     <img src={i} alt='img' />
                     <p>Dropshipping</p>
                 </Link>
@@ -71,24 +124,20 @@ const Header = () => {
             </div>
             <div className={s.div_nav__list}>
                 <ul className={s.main_ul}>
-                    <li> <Link to='/'>Головна</Link>  </li>
-                    <li> <Link to='/sachen'>Товари</Link>
+                    <li onClick={scrollToTop}> <Link to='/'>Головна</Link>  </li>
+                    <li onClick={scrollToTop}> <Link to='/sachen'>Товари</Link>
                         <div className={s.bar}>
                             <ul>
-                                <li><Link to='/sachen/0'>Airpods 2</Link> </li>
-                                <li><Link to='/sachen/1'>Airpods 3</Link>  </li>
-                                <li><Link to='/sachen/2'>Airpods pro</Link> </li>
-                                <li><Link to='/sachen/3'>Watch GS8 mini</Link></li>
-                                <li><Link to='/sachen/4'>Watch GS8+ Ultra</Link></li>
-                                <li><Link to='/sachen/5'>XO PR1 30</Link></li>
-                                <li><Link to='/sachen/6'>Powerbank</Link></li>
+                            {linkList.map((obj, index) => (
+                                <li key={index} onClick={scrollToTop}> <Link to={obj.link}>{obj.text}</Link></li>
+                            ))}
                             </ul>
                         </div>
 
                     </li>
-                    <li> <Link to='/info' >Інфо</Link> </li>
-                    <li> <Link to='/referal_form' >Партнерська програма</Link> </li>
-                    <li> <Link to='/faq' >FAQ</Link> </li>
+                    <li onClick={scrollToTop}> <Link to='/info' >Інфо</Link> </li>
+                    <li onClick={scrollToTop}> <Link to='/referal_form' >Партнерська програма</Link> </li>
+                    <li onClick={scrollToTop}> <Link to='/faq' >FAQ</Link> </li>
                 </ul>
                 <div ref={anim_el} className={s.brg_logo} onClick={animAdd}>
                     <div></div>
@@ -99,24 +148,20 @@ const Header = () => {
                 <div className="add_off" ref={bg_manu}>
 
                     <ul className={s.brg_ul_list}>
-                        <li> <Link to='/'>Головна</Link>  </li>
-                        <li> <Link to='/sachen'>Товари</Link></li>
-
+                        <li onClick={scrollToTop}> <Link to='/'>Головна</Link>  </li>
+                        <li onClick={scrollToTop}> <Link to='/sachen'>Товари</Link></li>
+                                
                         <ul className={s.bar}>
-                            <li><Link to='/sachen/0'>Airpods 2</Link> </li>
-                            <li><Link to='/sachen/1'>Airpods 3</Link>  </li>
-                            <li><Link to='/sachen/2'>Airpods pro</Link> </li>
-                            <li><Link to='/sachen/3'>Watch GS8 mini</Link></li>
-                            <li><Link to='/sachen/4'>Watch GS8+ Ultra</Link></li>
-                            <li><Link to='/sachen/5'>XO PR1 30</Link></li>
-                            <li><Link to='/sachen/6'>Powerbank</Link></li>
+                            {linkList.map((obj, index) => (
+                                <li key={index} onClick={scrollToTop}> <Link to={obj.link}>{obj.text}</Link></li>
+                            ))}
                         </ul>
 
 
 
-                        <li> <Link to='/info' >Інфо</Link> </li>
-                        <li> <Link to='/referal_form' >Партнерська програма</Link> </li>
-                        <li> <Link to='/faq' >FAQ</Link> </li>
+                    <li onClick={scrollToTop}> <Link to='/info' >Інфо</Link> </li>
+                    <li onClick={scrollToTop}> <Link to='/referal_form' >Партнерська програма</Link> </li>
+                    <li onClick={scrollToTop}> <Link to='/faq' >FAQ</Link> </li>
                     </ul>
                 </div>
             </div>
