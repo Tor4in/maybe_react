@@ -17,7 +17,7 @@ import pods2_2 from './product images/2/IMG_3322.webp'
 
 function App() {
 
-  
+    
   const productList = [
     {
       'images': [ pods2_1, pods2_2],
@@ -66,6 +66,7 @@ function App() {
         </Routes>
 
       </div>
+      
       <Footer />
 
     </div>

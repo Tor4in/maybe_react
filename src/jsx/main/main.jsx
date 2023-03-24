@@ -28,9 +28,23 @@ function Main() {
       sachel.current.classList.toggle('add_off')
       sachel.current.classList.toggle('add')
     }
+    
   }
+  
 
-
+  let scrollToTop = () => {
+    setTimeout(()=>{
+        window.scrollTo({
+            top: 0,
+            left : 0, 
+            behavior: "smooth"
+        })
+       
+        
+          
+    }, 1)
+    
+}
 
 
 
@@ -75,11 +89,11 @@ function Main() {
         
       </div>
       <div className={s.add_wrap}>
-        <div className={s.add} ref={imgel} >
+        <div className={s.add} ref={imgel}   >
           <img src={svg} alt="" onClick={show} />
         </div>
         <div className="add_off" ref={sachel}>
-          <Link to='/sachen'> <img src={svg} alt="" onClick={show} /></Link>
+          <Link to='/sachen'> <img src={svg} alt="" onClick={scrollToTop} /></Link>
         </div>
       </div>
 

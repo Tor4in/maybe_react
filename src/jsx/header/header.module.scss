@@ -1,6 +1,7 @@
 body {
     // margin: 66px 0 ;
-
+   
+    
 
     header {
         position: relative;
@@ -158,12 +159,14 @@ body {
                             border-radius: 0 0 3px 3px;
                         }
 
-
+                        
                     }
-                }
-                
+                    }
+                    
                     
                     ul.brg_ul_list {
+                        display: flex;
+                        flex-direction: column;
                         
                         li {
                             display: block;
